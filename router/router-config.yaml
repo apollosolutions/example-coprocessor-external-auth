@@ -1,0 +1,11 @@
+coprocessor:
+  url: http://localhost:3007
+  subgraph:
+    all:
+      request: # By including this key, the `SubgraphService` sends a coprocessor request whenever it is about to make a request to a subgraph.
+        headers: true # These boolean properties indicate which request data to include in the coprocessor request. All are optional and false by default.
+        body: true
+        context: true
+  router:
+    request:
+      context: true
