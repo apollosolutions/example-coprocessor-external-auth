@@ -1,0 +1,9 @@
+name: example-coprocessor-external-auth
+description: A demonstration of how to set up a router coprocessor for external
+  authentication. This can be used for service-to-service authentication,
+  populating claims based on an opaque token, enriching a JWT with additional
+  scopes, and more.
+tags:
+  - Coprocessor
+  - Authentication
+  - Router
